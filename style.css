@@ -1,0 +1,106 @@
+/*
+ Theme Name:   GeneratePress Child
+ Theme URI:    https://generatepress.com
+ Description:  Default GeneratePress child theme
+ Author:       Tom Usborne
+ Author URI:   https://tomusborne.com
+ Template:     generatepress
+ Version:      0.1
+*/
+
+.content-area {
+    width: 100% !important;
+
+}
+
+.sidebar {
+    display: none;
+}
+
+.woocommerce ul.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.woocommerce ul.products li.product {
+    flex: 1;
+    min-width: calc(25% - 15px);
+    max-width: calc(25% - 15px);
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 2rem 0;
+    width: auto;
+}
+
+.woocommerce ul.products[class*=columns-] li.product,
+.woocommerce-page ul.products[class*=columns-] li.product {
+    margin: 0 0 2rem 0;
+}
+
+.woocommerce ul.products li.product .price {
+    margin-bottom: 1rem;
+}
+
+.woocommerce ul.products li.product a.button {
+    margin-top: auto;
+    font-size: 1rem;
+}
+
+.woocommerce .products ul::after,
+.woocommerce .products ul::before,
+.woocommerce ul.products::after,
+.woocommerce ul.products::before {
+    display: none;
+}
+
+.wc-block-checkout__form,
+.wp-block-woocommerce-checkout-order-summary-block,
+.wp-block-woocommerce-cart {
+    padding: 0 4%;
+}
+
+button:disabled,
+button[disabled] {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
+
+.woocommerce a.added_to_cart {
+    position: absolute;
+    bottom: 52px;
+    right: 0;
+    z-index: 2;
+    font-size: .857em;
+}
+
+.error_vb {
+    color: #cc1818;
+    font-size: .75em;
+    max-width: 100%;
+    white-space: normal;
+    padding: 4px 0 0;
+}
+
+@media (max-width: 1200px) {
+    .woocommerce ul.products li.product {
+        min-width: calc(33.333% - 15px);
+        max-width: calc(33.333% - 15px);
+    }
+}
+
+@media (max-width: 768px) {
+    .woocommerce ul.products li.product {
+        min-width: calc(50% - 15px);
+    }
+
+}
+
+@media (max-width: 468px) {
+    .woocommerce ul.products li.product {
+        min-width: 100%;
+    }
+}
