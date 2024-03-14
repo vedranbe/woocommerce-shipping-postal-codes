@@ -2,7 +2,7 @@
 
 ## Generate Press Child Theme
 
-This repository implements a concise shipping ZIP code validation for WooCommerce, exclusively affecting the checkout process while leaving billing codes unaffected. This was made using VS Code and Local by Flywheel (WP Engine). 
+This repository implements a concise shipping ZIP code validation for WooCommerce, exclusively affecting the checkout process while leaving billing codes unaffected. This was made using VS Code and Local by Flywheel (WP Engine). Products where imported from here: https://github.com/woocommerce/woocommerce/tree/master/sample-data
 
 ## Backend Configuration
 
