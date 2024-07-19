@@ -1,4 +1,4 @@
-# WooCommerce Shipping Postal Codes Validation
+# Woocommerce Shipping Postal Codes Validation
 
 ## Generate Press Child Theme
 
